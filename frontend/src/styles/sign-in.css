@@ -1,0 +1,117 @@
+.sign-in {
+    width: 90%;
+    max-width: 600px;
+    padding: 90px 75px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/back2.webp') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.sign-in-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sign-in-label {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sign-in-input {
+    display: block;
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #dbdfe7;
+    outline: none;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.sign-in-submit {
+    padding: 25px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    border: 0;
+    outline: none;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #82c91e;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    margin-bottom: 25px;
+}
+
+.sign-in-submit:hover {
+    background-color: #74b41c;
+}
+
+.sign-in-already {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+    text-align: center;
+    color: #999;
+}
+
+.sign-in-login {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #82c91e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sign-in {
+        padding: 40px 30px;
+        width: 95%;
+        min-height: auto; /* Bỏ min-height trên mobile */
+    }
+
+    .sign-in-heading {
+        font-size: 32px;
+    }
+
+    .sign-in-input,
+    .sign-in-submit {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .sign-in-label,
+    .sign-in-already,
+    .sign-in-login {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,209 @@
+/* components/Profile.css */
+.profile-container {
+  margin-top: 80px!important;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #e6f0fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info,
+.order-history,
+.order-details {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-info h2,
+.order-history h2,
+.order-details h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Email và nút đổi mật khẩu */
+.email-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.change-password-btn {
+  padding: 8px 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.change-password-btn:hover {
+  background: #2980b9;
+}
+
+/* Form đổi mật khẩu */
+.password-form {
+  margin-top: 20px;
+}
+
+.password-input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 250px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+}
+
+.update-btn {
+  padding: 10px 20px;
+  background: #27ae60; /* Xanh lá cho nút cập nhật */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-right: 10px;
+}
+
+.update-btn:hover {
+  background: #219653;
+}
+
+.cancel-btn {
+  padding: 10px 20px;
+  background: #e74c3c; /* Đỏ cho nút hủy */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #c0392b;
+}
+
+/* Bảng lịch sử đơn hàng */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+.order-table tr:hover {
+  background: #f0f8ff;
+  cursor: pointer;
+}
+
+.view-details-btn {
+  padding: 6px 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-details-btn:hover {
+  background: #219653;
+}
+
+/* Thông tin đơn hàng */
+.order-info p {
+  margin: 8px 0;
+  color: #34495e;
+}
+
+.order-info strong {
+  color: #2c3e50;
+}
+
+/* Bảng sản phẩm trong đơn hàng */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+.product-table .product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Đánh giá sản phẩm */
+.review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.star-filled {
+  color: #ffd700;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.star-empty {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.review-textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  resize: none;
+  font-size: 14px;
+}
+
+.submit-review-btn {
+  padding: 8px 16px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-review-btn:hover {
+  background: #c0392b;
+}

@@ -1,0 +1,262 @@
+/* src/styles/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF5E1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style cho Navbar (Header) */
+.navbar {
+  position: fixed; /* Cố định ở đầu trang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8B4513; /* Màu nâu gỗ */
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Đảm bảo header nằm trên các thành phần khác */
+}
+
+.navbar-brand h2 {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links button {
+  padding: 8px 20px;
+  background-color: #A9CBA4; /* Xanh lá nhạt */
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links button:hover {
+  background-color: #FFA500; /* Vàng cam */
+  color: white;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-user span {
+  color: white;
+  font-weight: 600;
+}
+
+.navbar-user button {
+  padding: 8px 20px;
+  background-color: #FFA500; /* Vàng cam */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-user button:hover {
+  background-color: #FF8C00; /* Vàng cam đậm */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 80px auto 20px auto; /* Thêm margin-top để tránh bị che bởi header cố định */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #8B4513;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background: #FFF5E1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #A9CBA4;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #FFA500;
+}
+
+button {
+  padding: 10px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF8C00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #A9CBA4;
+}
+
+th {
+  background-color: #8B4513;
+  color: white;
+  font-weight: 600;
+}
+
+td {
+  color: #333;
+}
+
+tr:hover {
+  background-color: #FFF5E1;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #A9CBA4;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #FFA500;
+}
+
+.order-details {
+  padding: 20px;
+  background-color: #FFF5E1;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-details h3 {
+  color: #8B4513;
+  margin-bottom: 15px;
+}
+
+.order-details h4 {
+  color: #8B4513;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.order-info p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.order-info p strong {
+  color: #8B4513;
+}
+
+.product-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-table th,
+.product-details-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #A9CBA4;
+}
+
+.product-details-table th {
+  background-color: #A9CBA4;
+  color: #333;
+}
+
+.product-details-table tr:hover {
+  background-color: #FFF5E1;
+}
+
+.status-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.status-filter button {
+  padding: 8px 20px;
+  background-color: #A9CBA4;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.status-filter button:hover {
+  background-color: #8B4513;
+  color: white;
+}
+
+.status-filter button.active {
+  background-color: #FFA500;
+  color: white;
+}

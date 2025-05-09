@@ -1,0 +1,312 @@
+/* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Poppins:wght@300;400;600&family=Open+Sans:wght@400&display=swap');
+
+/* Layout chính */
+.menu {
+    background-color: #FFF7E6;
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* Container tổng */
+.menu-wrapper {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Sidebar danh mục */
+.menu-sidebar {
+    width: 220px;
+    background: #F9FAFB;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    border: 1px solid #E5E7EB;
+}
+
+/* Tiêu đề danh mục */
+.menu-sidebar h3 {
+    font-family: 'Prata', serif;
+    font-size: 1.6rem;
+    color: #3F2A1D;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Checkbox danh mục */
+.menu-sidebar .category-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-sidebar .category-checkbox label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #4A5568;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.menu-sidebar .category-checkbox label:hover {
+    background: #F1F5F9;
+}
+
+.menu-sidebar .category-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #F4A261;
+    cursor: pointer;
+}
+
+/* Phần nội dung chính */
+.menu-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề section */
+.section-title {
+    padding: 40px 0;
+    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-color: #FFF7E6;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.section-title h2 {
+    font-family: 'Prata', serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #3F2A1D;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: #F4A261;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Tagline */
+.menu-title h2 {
+    font-family: 'Prata', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3F2A1D;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 12px 20px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+}
+
+/* Container sản phẩm */
+.menu-products {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Sắp xếp */
+.menu-sort {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.menu-sort select {
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    background: #FFFFFF;
+    cursor: pointer;
+    color: #4A5568;
+}
+
+/* Grid sản phẩm */
+.menu-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Mỗi sản phẩm */
+.food-items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 15px;
+    background: #FEF5E7; /* Vàng nhạt tương đồng */
+    border: 2px solid #F4A261; /* Cam nhạt tương đồng */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-items:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hình ảnh sản phẩm */
+.food-item img {
+    width: 100%;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    border: 2px solid #F7D794; /* Vàng nhạt tương đồng */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Tiêu đề sản phẩm */
+.food-issue h2 {
+    margin: 10px 0;
+    color: #3F2A1D;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Giá sản phẩm */
+.food-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.food-price .original-price {
+    font-size: 12px;
+    color: #9CA3AF;
+    text-decoration: line-through;
+}
+
+.food-price .current-price {
+    font-size: 20px;
+    color: #E76F51;
+    font-weight: bold;
+}
+
+.food-price .current-price span {
+    font-size: 14px;
+    color: #E76F51;
+    margin-left: 4px;
+}
+
+.food-price .discount {
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #F5A9B8; /* Hồng nhạt triadic */
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* Meta sản phẩm */
+.food-meta {
+    margin: 8px 0;
+    font-size: 12px;
+    color: #6B7280;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Đổi màu xe hàng */
+.food-meta .cart-icon {
+    color: #FFFFFF;
+}
+
+/* Nút thêm vào giỏ hàng */
+.add-to-cart-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #E76F51; /* Cam san hô */
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background: #F4A261; /* Cam nhạt khi hover */
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .menu-wrapper {
+        flex-direction: column;
+    }
+    .menu-sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 40px 10px;
+    }
+    .menu-lists {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    .food-item img {
+        height: 180px;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-lists {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    .food-item img {
+        height: 160px;
+        aspect-ratio: 1 / 1;
+    }
+}
